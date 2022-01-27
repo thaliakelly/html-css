@@ -1,0 +1,101 @@
+@charset "UTF-8"
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+:root{
+    --font1: Arial, Helvetica, sans-serif;
+    --font2: 'Bangers', cursive;
+    --font3: 'Shrikhand', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100%;
+    background-color: darkgray;
+    font-family: var(--font1);
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header>h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 10vw;
+    font-family: var(--font2);
+}
+
+header>p{
+    padding-bottom: 50px;
+
+
+}
+
+header a, footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
+section{
+    font-family: var(--font3);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px ;
+    font-size: 3.5vw;
+}
+
+section> p{
+    padding-bottom: 2em ;
+}
+
+section.normal{
+    background-color: rgb(247, 247, 247);
+
+}
+
+section.imagem{
+    background-color: rgb(73, 73, 73);
+    color: rgb(8, 8, 8);
+    box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.384);
+    background-attachment: fixed;
+}
+
+section.imagem > p{
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.322);
+    padding: 5px;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.26);  
+}
+
+section#img1{
+    background-image: url('imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+} 
+
+section#img2{
+    background-image: url('imagens/background002.jpg');
+    background-size: cover;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
