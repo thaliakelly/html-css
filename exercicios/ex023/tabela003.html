@@ -12,10 +12,25 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: rgba(128, 128, 128, 0.192);
         }
         td, th{
             border: 1px solid black;
             padding: 10px;
+        }
+        thead>tr>td{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        tbody>tr:nth-child(2n){
+            background-color: lightblue;
         }
         thead, tfoot{
             background-color: gray;
@@ -29,10 +44,11 @@
 <body>
     <h1>uso de tabelas grandes</h1>
     <table>
+        <caption>população das unidades federais</caption>
         <thead>
             <tr>
-                <th>estado</th>
-                <th>população</th>
+                <th scope="col">estado</th>
+                <th scope="col" >população</th>
             </tr>
         </thead>
         <tbody>
@@ -99,10 +115,11 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>total de habitantes</th>
+                <th scope="row">total de habitantes</th>
                 <td class="num"> <strong>0000</strong> </td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati blanditiis alias maiores repellat sapiente accusamus, doloribus quis magnam ducimus nulla dignissimos laudantium perspiciatis voluptatem consectetur nobis natus ex libero vel? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo at repellat accusantium, quibusdam nulla possimus dolorum qui reiciendis obcaecati nesciunt commodi fuga. Nisi officiis consequuntur aperiam? Itaque tempore ducimus nihil! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, provident dolorem corrupti unde magni labore quidem! Veritatis eum doloribus, dignissimos recusandae dolorum ullam animi nobis delectus nulla dolores iusto rerum.</p>
 </body>
 </html>
